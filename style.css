@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --dark-blue: #1f1e26;
+    --text-gray: #666;
+    --white: #ffffff;
+    --orange:var(--orange);
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    color: var(--dark-blue);
+    line-height: 1.6;
+}
+
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
+    url('Images/b1.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    color: var(--white)
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    background: #ff6a28;
+    color: white;
+    
+}
+
+.nav a {
+    color: white;
+    margin-right: 18px;
+    text-decoration: none;
+    list-style: none;
+    margin: 0 15;
+    
+}
+.hero h1 {
+    font-size: 4rem;
+    margin: 20px 0;
+}
+
+.btn-orange {
+    background: transparent;
+    border: 2px solid var(--orange);
+    color: var(--orange);
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.btn-orange-full{
+    background: var(--orange);
+    border: none;
+    color: var(--white);
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+}
+
+.popular-causes {
+    padding: 80px 10%;
+    background-color: #f9f9f9;
+}
+
+.causes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.cause-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+.cause {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cause img {
+    width: 100%;
+    border-radius: 10px 10PX;
+}
+.progress-bar {
+    background: #444;
+    height: 8px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.progress {
+    background: var(--orange);
+    height: 100%;
+    border-radius: 5px;
+}
+
+.cause-card-dark {
+    background-color: var(--dark-blue);
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    position: relative;
+    transform: translateY(-50px);
+}
+
+.featured-cause-container {
+    background-color: var(--white);
+    padding: 80px 0;
+}
+.container-flex{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    gap: 50px;
+}
+
+.intro-text {
+    flex: 1;
+}
+.intro-text .orange-text{
+    color: var(--orange);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.intro-text h2{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+.intro-text p{
+    color: var(--text-gray);
+    margin-bottom: 30px;
+    max-width: 500px;
+}
+
+.cause-card-dark {
+    flex: 0 0 350px;
+    background: var(--dark-blue);
+    color: var(--white);
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    position: relative;
+}
+.cause-card-dark h3{
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+.cause-card-dark p{
+    font-size: 0.9rem;
+    color: #b0b0b0;
+    margin-bottom: 25px;
+}
+.cause-card-dark .badge{
+    background-color: #ffc107;
+    color: var(--dark-blue);
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    position: absolute;
+    top: -15px;
+    right: 20px;
+}
+.help-action {
+    display: flex;
+    align-items: center;
+    padding: 60px 10%;
+    background: #fff;
+}
+
+.icon-boxes {
+    display: flex;
+    gap: 15;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.orange-bg {
+    background-color: #ff6a28;
+}
+.blue-bg {
+    background-color: #0088ff;
+}
+.green-bg {
+    background-color: #28a745;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+}
+.footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.intro {
+    background: #fff;
+    padding: 80px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    align-items: center;
+
+}
+header {
+    background: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Orphelinat-logo {
+     font-size: 40px;
+     font-weight: bold;
+     color: var(--primary-green);
+}
+.main-nav ul {
+    display: flex;
+    list-style: none;
+}
+.main-nav ul li a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 15px;
+    font-weight: 600;
+}
